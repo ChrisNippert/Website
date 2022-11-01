@@ -45,7 +45,6 @@
             <p>Welcome to the UNH Cyber Security Club Website!</p>
         </div>
 
-
         <div class="container">
             <div class="row p-sm-4">
 
@@ -54,17 +53,15 @@
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <a class="btn btn-primary m-2" href="pages/darkweb.html">Dark Web</a>
                         <a class="btn btn-primary m-2" href="pages/ctf.html">Capture The Flag</a>
-                    </div>
 
-                    <img src="static/images/flyer_image.png" alt="flyer" width="100%">
+                        <img src="static/images/flyer_image.png" alt="flyer" width="100%">
+                    </div>
                 </div>
-                <div class="col-sm-6">
-                    <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
-                        new Crate({
-                            server: '753648111372730479', // UNH Cybersecurity Club
-                            channel: '960913750267949076' // #announcements
-                        })
-                    </script>
+                <div class="col-sm-6 p-sm-2">
+                    <widgetbot server="753648111372730479" channel="960913750267949076" width="500" height="500">
+                    </widgetbot>
+                    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+
                 </div>
             </div>
             <div class="row p-sm-4">
@@ -96,6 +93,13 @@
             </div>
         </div>
     </div>
+    <!--Discord Button-->
+    <!-- <script src='https://cdn.jsdelivr.net/npm/@widgetbot/crate@3' async defer>
+        new Crate({
+            server: '753648111372730479', // UNH Cybersecurity Club
+            channel: '960913750267949076' // #announcements
+        }) -->
+    </script>
 </body>
 
 </html>
