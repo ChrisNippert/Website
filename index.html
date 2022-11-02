@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
     <title>Cyber Security Club</title>
@@ -24,49 +24,52 @@
         crossorigin="anonymous"></script>
 </head>
 
-<nav>
-    <ul class="nav nav-pills nav-fill border-bottom">
-        <li class="nav-item">
-            <a class="nav-link active disabled">Home</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/darkweb.html">Dark Web</a>
-        </li>
-        <li class="nav-item">
-            <a class="nav-link" href="pages/ctf.html">Capture The Flag</a>
-        </li>
-    </ul>
-</nav>
-
 <body>
+    <nav>
+        <ul class="nav nav-pills nav-fill border-bottom">
+            <li class="nav-item">
+                <a class="nav-link active disabled">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/team.html">Team</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/darkweb.html">Dark Web</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="pages/ctf.html">Capture The Flag</a>
+            </li>
+        </ul>
+    </nav>
     <div class="bg-dark">
         <div class="jumbotron text-center">
-            <h1>Cyber Security Club</h1>
-            <p>Welcome to the UNH Cyber Security Club Website!</p>
+            <h1>Cybersecurity Club</h1>
+            <p>Welcome to the UNH Cybersecurity Club Website!</p>
         </div>
 
         <div class="container">
             <div class="row p-sm-4">
 
                 <div class="col-sm-6 text-light text-md-center">
-                    <h3>Here you can find links and resources to things we talk about in Cyber Security Club</h3>
+                    <h3>Here you can find links and resources to things we talk about in Cybersecurity Club</h3>
                     <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                        <a class="btn btn-primary m-2" href="pages/team.html">Team</a>
                         <a class="btn btn-primary m-2" href="pages/darkweb.html">Dark Web</a>
                         <a class="btn btn-primary m-2" href="pages/ctf.html">Capture The Flag</a>
 
-                        <img src="static/images/flyer_image.png" alt="flyer" width="100%">
+                        <img src="static/images/flyer_image.png" alt="flyer" style="width: 100%;">
                     </div>
                 </div>
-                <div class="col-sm-6 p-sm-2">
-                    <widgetbot server="753648111372730479" channel="960913750267949076" width="500" height="500">
-                    </widgetbot>
-                    <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
-
-                </div>
+                <widgetbot class="col-sm-6 p-sm-2 border border-secondary" server="753648111372730479"
+                    channel="960913750267949076" height="500">
+                </widgetbot>
+                <script src="https://cdn.jsdelivr.net/npm/@widgetbot/html-embed"></script>
+            </div>
+            <div class="border">
             </div>
             <div class="row p-sm-4">
                 <div class="col-sm-12">
-                    <h2 class="text-light">Schedule</h2>
+                    <h2 class="text-light text-center">Schedule</h2>
                     <table class="table table-dark table-striped">
                         <thead>
                             <tr>
