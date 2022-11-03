@@ -2,9 +2,9 @@
 <html lang="en">
 
 <head>
-    <title>Cyber Security Club</title>
+    <title>CTF</title>
     <!--title icon -->
-    <link rel="icon" href="../static/images/logo.png" type="image/png" sizes="16x16">
+    <link rel="icon" href="../../static/images/logo.png" type="image/png" sizes="16x16">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="static/css/style.css">
@@ -25,16 +25,31 @@
     <nav>
         <ul class="nav nav-pills nav-fill border-bottom">
             <li class="nav-item">
-                <a class="nav-link" href="../index.html">Home</a>
+                <a class="nav-link" href="../../index.html" >Home</a>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="team.html">Team</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Club
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="phishing.html">Phishing</a>
+                    <a class="dropdown-item" href="darkweb.html">Dark Web</a>
+                    <a class="dropdown-item active disabled" href="#">Capture The Flag</a>
+                </div>
             </li>
-            <li class="nav-item">
-                <a class="nav-link" href="darkweb.html">Dark Web</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link active disabled" href="ctf.html">Capture The Flag</a>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://neccdl.org/neccdc/">NECCDC</a>
+                    <a>
+                        <hr class="dropdown-divider">
+                    </a>
+                    <a class="dropdown-item" href="../team/about.html">About</a>
+                </div>
             </li>
         </ul>
     </nav>
@@ -58,7 +73,7 @@
                 </div>
 
                 <div class="col-sm-6">
-                    <img src="../static/images/ctf.jpg" class="img-fluid rounded" alt="Responsive image">
+                    <img src="../../static/images/club/ctf.jpg" class="img-fluid rounded" alt="Responsive image">
                 </div>
             </div>
             <div class="border">
@@ -66,5 +81,9 @@
         </div>
     </div>
 </body>
-
+<footer class="footer">
+    <div class="container-fluid">
+        <span class="text-muted">UNH Cybersecurity Club 2022</span>
+    </div>
+</footer>
 </html>

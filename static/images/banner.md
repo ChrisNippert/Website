@@ -1,1 +1,0 @@
-https://img.freepik.com/free-vector/white-clean-hexagonal-medical-concept_1017-29801.jpg?w=2000
