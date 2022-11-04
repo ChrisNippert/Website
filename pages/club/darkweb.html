@@ -127,27 +127,38 @@
                     <img src="../../static/images/club/tor-diagram.jpg" class="img-fluid rounded"
                         alt="Responsive image">
                 </div>
-                <div class="col-sm-12 text-light text-md-center">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group"></li>
+                <div class="col-sm-12 text-light text-md-center m-sm-2 p-sm-2">
+                    <ul class="list-group rounded">
+                        <li class="list-group-item list-group-item-info">
+                            Step 1: The user connects to a "Guard Node" in the Tor network.
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            Step 2: The Guard Node then connects to a "Relay Node".
+                        </li>
+                        <li class="list-group-item list-group-item-info">
+                            Step 3: The Relay Node then connects to a "Exit Node" and then accesses the .onion site.
+                        </li>
+                        <li class="list-group-item list-group-item-warning">
+                            Note:<br>Each node can only see the node before and after it.
+                            For instance, the Guard Node can only see the user and the Relay Node, and the Relay Node
+                            can only see the Guard Node and the Exit Node, etc.
+                            <br>
+                            <br>
+                            As well as this, each connection only consists of these three nodes. No more, no less.
+                        </li>
+                    </ul>
                 </div>
             </div>
-            <div class="border">
-            </div>
-            <div>
-                <div class="row p-sm-4">
-                    <div class="col-sm-12 text-light text-md-center">
-                        <h3>Who Funds TOR?</h3>
-                        <p>
-                            Tor is funded by a number of different sponsors including US federal agencies, private
-                            foundations,
-                            and individual donors.
-                        </p>
-                    </div>
+            <div class="border"></div>
+
+
+            <div class="row p-sm-4">
+                <div class="col-sm-12 text-light text-md-center">
+                    <h3>What does a Dark Web website look like?</h3>
+                    <h4><a href="../examples/dark_web_example.html">Most look like this</a></h4>
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </body>
 <footer class="footer">
