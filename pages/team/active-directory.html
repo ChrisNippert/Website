@@ -19,6 +19,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
 </head>
 
 <body>
@@ -57,27 +58,27 @@
     <div class="bg-dark">
         <div class="jumbotron text-center">
             <h1>Active Directory</h1>
-            <p>We are the Cybersecurity Team!</p>
+            <p>Microsoft's proprietary directory service</p>
         </div>
         <div class="container">
             <div class="text-light p-md-2 m-md-2">
-                <p>What is it?
-                    It is an Identity Provider. It provides centralized identities for people (User Accounts)</p>
+                <h2 class="text-center">What is it?</h2>
+                It is an Identity Provider. It provides centralized identities for people (User Accounts)</p>
                 <p>AD: uses LDAP (Lightweight Directory Access Protocol)
                     AD federation services (ADFS): Allows AD to use SAML, OAuth and WS-Fed</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="ad-in-the-lab">AD in the lab</h2>
+                <h2 class="text-center">AD in the lab</h2>
                 <p>Windows systems are &quot;domain joined&quot; to the lab&#39;s &quot;Active Directory Domain&quot;
                     Because people at UNH have IDs in AD, they are able to login to the lab computers because they are
                     hooked up to theDomain</p>
                 <p>unhcsc.ccdc is the labs Domain</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="ui">UI</h2>
+                <h2 class="text-center">UI</h2>
                 <p>MMC Plugin (Microsoft Management Console) to view AD stuff
                     Win+R: &quot;mmc&quot;</p>
-                <h3 class="text-center" id="standalone-mmc-tools">Standalone MMC tools</h3>
+                <h3 class="text-center">Standalone MMC tools</h3>
                 <p>Active Directory Users and Computers (ADUC - Pronounced &quot;A Duck&quot;)
                     Active Directory Sites and Services
                     Active Directory Domains and Trusts
@@ -88,29 +89,29 @@
                 <p><strong><em>Used a lot so its good to know about it.</em></strong></p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="azure-active-directory">Azure Active Directory</h2>
+                <h2 class="text-center">Azure Active Directory</h2>
                 <p>You can sync AD with AAD with AADC (AAD connect)
                     Built-in ADFS support essentially</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="single-sign-on">Single Sign on</h2>
+                <h2 class="text-center">Single Sign on</h2>
                 <p>Uses Kerberos (complicated)
                     but You give it a kerberos ticket and it acknowledges its valid</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="dns">DNS</h2>
+                <h2 class="text-center">DNS</h2>
                 <p>DNS role is installed on AD Domain Controller.</p>
                 <p>Service Location (SRV)</p>
                 <p>Most times AD is broken is because DNS records are missing or not up to date.</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="domain-controllers">Domain Controllers</h2>
+                <h2 class="text-center">Domain Controllers</h2>
                 <p>PDC emulator (Primary domain controller)</p>
                 <p>More than one domain controller, they have the same data, and they sync.
                     If conflict, it is handlable.</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="group-policy">Group Policy</h2>
+                <h2 class="text-center">Group Policy</h2>
                 <p>You can apply policies against objects in a directory, like enforce password complexity.
                     These policies get pushed out to the connected computers.</p>
                 <p>You can use it to deploy software (but don&#39;t because it is slow and error prone)</p>
@@ -119,13 +120,13 @@
                 <p>Ubuntu and Redhat also have decent AD support.</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="cache-login">Cache login</h2>
+                <h2 class="text-center">Cache login</h2>
                 <p>Laptop leaves AD place, you can login using the last cache password. (Default last 10 users are
                     stored)
                 </p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="data-storage">Data Storage</h2>
+                <h2 class="text-center">Data Storage</h2>
                 <p>AD stores User information.
                     The Database that stores stuff is related to Exchange and is called Extensible Storage Engine
                     It&#39;s a type of No-SQL database</p>
@@ -133,7 +134,7 @@
                 <p>Microsoft became more open source when management changed in 2014</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="folder-redirection">Folder redirection</h2>
+                <h2 class="text-center">Folder redirection</h2>
                 <p>Its a group policy that redirects user home directories to a network share so they are accessible
                     from
                     all
@@ -141,7 +142,7 @@
                 </p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="sites-and-services">Sites and Services</h2>
+                <h2 class="text-center">Sites and Services</h2>
                 <p>You can have multiple sites around the world with DC&#39;s in each one
                     This is how you&#39;d setup DC replication config and things.</p>
                 <p>Good idea to have more than 1 DC in case of one failing.</p>
@@ -150,26 +151,63 @@
                 </p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="it-is-possible-to-fake-being-a-dc-and-getting-all-the-ids-sent-to-you-lol">It is possible to
+                <h2 class="text-center">
+                    It is possible to
                     <code>fake</code>
-                    being a DC and getting all the IDs sent to you lol
+                    being a DC and getting all the IDs sent to you
                 </h2>
                 <p>Requires admin access to AD using Mimikatz</p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="pass-to-hash-attack">Pass to Hash attack</h2>
+                <h2 class="text-center">Pass to Hash attack</h2>
                 <p>Using a known NTLM hash to authenticate to other systems. Only works with legacy NTLM authentication
                 </p>
                 <div class="border">
                 </div>
-                <h2 class="text-center" id="ad-domains-and-trusts">AD Domains and Trusts</h2>
+                <h2 class="text-center">AD Domains and Trusts</h2>
                 <p>You can have multiple domains per domain controller that represent different things</p>
                 <p>Base unit in AD is called a Forest</p>
                 <p>Most people do a &quot;Single Domain Forest&quot; because it&#39;s pretty clean</p>
                 <p>Some people have hierarchical domains</p>
+
+                <div class="border">
+                </div>
+
+                <h2 class="text-center">
+                    Glossary
+                </h2>
+                <dl class="dl">
+                    <dt>AD</dt>
+                    <dd>Active Directory</dd>
+                    <dt>ADFS</dt>
+                    <dd>Active Directory Federation Services</dd>
+                    <dt>ADUC</dt>
+                    <dd>Active Directory Users and Computers</dd>
+                    <dt>ADSI</dt>
+                    <dd>Active Directory Service Interface</dd>
+                    <dt>AAD</dt>
+                    <dd>Azure Active Directory</dd>
+                    <dt>AADC</dt>
+                    <dd>Azure Active Directory Connect</dd>
+                    <dt>DC</dt>
+                    <dd>Domain Controller</dd>
+                    <dt>OU</dt>
+                    <dd>Organizational Unit</dd>
+                    <dt>SRV</dt>
+                    <dd>Service Location</dd>
+                    <dt>NTLM</dt>
+                    <dd>NT Lan Manager</dd>
+                    <dt>LDAP</dt>
+                    <dd>Lightweight Directory Access Protocol</dd>
+                </dl>
             </div>
         </div>
     </div>
+    <footer class="footer">
+        <div class="container-fluid">
+            <span class="text-muted">UNH Cybersecurity Club 2023</span>
+        </div>
+    </footer>
 </body>
 
 </html>
