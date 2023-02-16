@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Team - Active Directory</title>
+    <!--title icon -->
+    <link rel="icon" href="../../static/images/logo.png" type="image/png" sizes="16x16">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <ul class="nav nav-pills nav-fill border-bottom">
+            <li class="nav-item">
+                <a class="nav-link" href="../../index.html">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Club
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="../club/phishing.html">Phishing</a>
+                    <a class="dropdown-item" href="../club/darkweb.html">Dark Web</a>
+                    <a class="dropdown-item" href="../club/ctf.html">Capture The Flag</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+                    aria-haspopup="true" aria-expanded="false">
+                    Team
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="https://neccdl.org/neccdc/">NECCDC</a>
+                    <a>
+                        <hr class="dropdown-divider">
+                    </a>
+                    <a class="dropdown-item" href="about.html">About</a>
+                    <a class="dropdown-item active disabled" href="#">Active Directory</a>
+                </div>
+            </li>
+        </ul>
+    </nav>
+    <div class="bg-dark">
+        <div class="jumbotron text-center">
+            <h1>Active Directory</h1>
+            <p>We are the Cybersecurity Team!</p>
+        </div>
+        <div class="container">
+            <div class="text-light p-md-2 m-md-2">
+                <p>What is it?
+                    It is an Identity Provider. It provides centralized identities for people (User Accounts)</p>
+                <p>AD: uses LDAP (Lightweight Directory Access Protocol)
+                    AD federation services (ADFS): Allows AD to use SAML, OAuth and WS-Fed</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="ad-in-the-lab">AD in the lab</h2>
+                <p>Windows systems are &quot;domain joined&quot; to the lab&#39;s &quot;Active Directory Domain&quot;
+                    Because people at UNH have IDs in AD, they are able to login to the lab computers because they are
+                    hooked up to theDomain</p>
+                <p>unhcsc.ccdc is the labs Domain</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="ui">UI</h2>
+                <p>MMC Plugin (Microsoft Management Console) to view AD stuff
+                    Win+R: &quot;mmc&quot;</p>
+                <h3 class="text-center" id="standalone-mmc-tools">Standalone MMC tools</h3>
+                <p>Active Directory Users and Computers (ADUC - Pronounced &quot;A Duck&quot;)
+                    Active Directory Sites and Services
+                    Active Directory Domains and Trusts
+                    ADSI Edit
+                    Group Policy Management</p>
+                <p>OU: Organizational Unit (folders that objects (such as computers, users, groups) are stored in)</p>
+                <p>AD Database contains all the info about the domain.</p>
+                <p><strong><em>Used a lot so its good to know about it.</em></strong></p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="azure-active-directory">Azure Active Directory</h2>
+                <p>You can sync AD with AAD with AADC (AAD connect)
+                    Built-in ADFS support essentially</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="single-sign-on">Single Sign on</h2>
+                <p>Uses Kerberos (complicated)
+                    but You give it a kerberos ticket and it acknowledges its valid</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="dns">DNS</h2>
+                <p>DNS role is installed on AD Domain Controller.</p>
+                <p>Service Location (SRV)</p>
+                <p>Most times AD is broken is because DNS records are missing or not up to date.</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="domain-controllers">Domain Controllers</h2>
+                <p>PDC emulator (Primary domain controller)</p>
+                <p>More than one domain controller, they have the same data, and they sync.
+                    If conflict, it is handlable.</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="group-policy">Group Policy</h2>
+                <p>You can apply policies against objects in a directory, like enforce password complexity.
+                    These policies get pushed out to the connected computers.</p>
+                <p>You can use it to deploy software (but don&#39;t because it is slow and error prone)</p>
+                <p>You can have linux or mac join AD, but Group policy doesn&#39;t work for them. Only windows.
+                    Third party (centrify) products allow for this ability.</p>
+                <p>Ubuntu and Redhat also have decent AD support.</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="cache-login">Cache login</h2>
+                <p>Laptop leaves AD place, you can login using the last cache password. (Default last 10 users are
+                    stored)
+                </p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="data-storage">Data Storage</h2>
+                <p>AD stores User information.
+                    The Database that stores stuff is related to Exchange and is called Extensible Storage Engine
+                    It&#39;s a type of No-SQL database</p>
+                <p>The Extensible Storage Engine is open source</p>
+                <p>Microsoft became more open source when management changed in 2014</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="folder-redirection">Folder redirection</h2>
+                <p>Its a group policy that redirects user home directories to a network share so they are accessible
+                    from
+                    all
+                    systems
+                </p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="sites-and-services">Sites and Services</h2>
+                <p>You can have multiple sites around the world with DC&#39;s in each one
+                    This is how you&#39;d setup DC replication config and things.</p>
+                <p>Good idea to have more than 1 DC in case of one failing.</p>
+                <p>DNS points to one that is operational <strong><em>Which is one of the reasons why DNS is
+                            important</em></strong>
+                </p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="it-is-possible-to-fake-being-a-dc-and-getting-all-the-ids-sent-to-you-lol">It is possible to
+                    <code>fake</code>
+                    being a DC and getting all the IDs sent to you lol
+                </h2>
+                <p>Requires admin access to AD using Mimikatz</p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="pass-to-hash-attack">Pass to Hash attack</h2>
+                <p>Using a known NTLM hash to authenticate to other systems. Only works with legacy NTLM authentication
+                </p>
+                <div class="border">
+                </div>
+                <h2 class="text-center" id="ad-domains-and-trusts">AD Domains and Trusts</h2>
+                <p>You can have multiple domains per domain controller that represent different things</p>
+                <p>Base unit in AD is called a Forest</p>
+                <p>Most people do a &quot;Single Domain Forest&quot; because it&#39;s pretty clean</p>
+                <p>Some people have hierarchical domains</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
